@@ -130,4 +130,33 @@ a:link, a:visited {
   #wrap .tb_rating_ico__.tb__icon.tb-google-rating {
     color: #79FFF7 !important; }
 
+@media only screen and (max-width: 1000px) {
+  #wrap {
+    width: 100%;
+    padding: 40px 10px 10px 10px; }
+    #wrap #socials i {
+      font-size: 32px; }
+    #wrap #details-wrap #details .line a {
+      margin: 20px 0; }
+      #wrap #details-wrap #details .line a p {
+        font-size: 16px; }
+      #wrap #details-wrap #details .line a i {
+        margin-right: 5px;
+        font-size: 20px; }
+    #wrap .half {
+      width: 100%; }
+      #wrap .half .artist p {
+        width: 100%; }
+      #wrap .half .artist .name {
+        font-size: 22px; }
+      #wrap .half .artist .handle {
+        font-size: 18px;
+        margin: 5px 0 0 20px; }
+      #wrap .half .line .time {
+        width: 120px; }
+      #wrap .half .reviews .taggbox {
+        width: 100% !important; }
+      #wrap .half .reviews h2 {
+        margin: 40px 0 0 0; } }
+
 /*# sourceMappingURL=style.css.map */
