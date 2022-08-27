@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*variables*/
+$black: #000000;
+$blue: #79FFF7;
+$gray: #5C5C5C;
+$dgray: #111111;
+$white: #D3D5D7;
+$Fira: 'Fira Sans', sans-serif;
+$Eras: 'ErasBold', sans-serif;
+
+/*mix-ins*/
+@mixin flexRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin flexColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+* { box-sizing: border-box; }
+img { max-width: 100%; }
+body {
+  background: $black;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+@font-face {
+  font-family: ErasBold;
+  src: url(ErasBoldITC.ttf);
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 50px;
+  background: $dgray;
+  @include flexRow;
+  align-items: flex-start;
+  h1, h2 {
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  h1 {
+    color: $blue;
+    font-family: $Eras;
+    font-size: 36px;
+    font-weight: 700;
+
+  }
+  h2 {
+    color: $white;
+    font-family: $Fira;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+  #socials {
+    width: 100%;
+    padding: 20px 50px;
+    @include flexRow;
+    justify-content: space-evenly;
+    i {
+      color: $blue;
+      font-size: 50px;
+    }
+  }
+  #details-wrap {
+    width: 100%;
+    @include flexRow;
+    justify-content: center;
+    #details {
+      .line a {
+        @include flexRow;
+        justify-content: center;
+        margin: 10px 0;
+        i {
+          color: $blue;
+          font-size: 25px;
+          margin-right: 10px;
+        }
+        p {
+          margin: 0;
+          color: $white;
+          font-size: 20px;
+          font-family: $Fira;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .half {
+    width: 50%;
+    padding: 20px;
+    h2 {
+      font-size: 32px;
+      font-family: $Eras;
+      letter-spacing: 0;
+      text-align: left;
+      margin-bottom: 30px;
+      #small {
+        font-size: 12px;
+        color: $gray;
+        margin-left: 20px;
+        font-weight: 200;
+        font-family: $Fira;
+        letter-spacing: 1px;
+      }
+    }
+
+    .line {
+      @include flexRow;
+      margin-bottom: 15px;
+      color: $gray;
+      font-size: 18px;
+      p {
+        margin: 0;
+      }
+      span {
+        flex: 1;
+        border-bottom: dashed $gray 1px;
+        height: 18px;
+      }
+      .time {
+        color: $white;
+        width: 150px;
+        text-transform: uppercase;
+      }
+    }
+    .artist {
+      margin: 10px 0;
+      p {
+        width: 50%;
+        text-transform: uppercase;
+      }
+      .name { font-size: 22px; }
+      .handle {
+        color: $white;
+        font-size: 14px;
+        i {
+          color: $blue;
+          font-size: 21px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+
+  .tb_rating_ico__.tb__icon.tb-google-rating {
+    color: $blue!important;
+  }
+}
