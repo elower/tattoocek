@@ -127,6 +127,19 @@ a:link, a:visited {
           color: #79FFF7;
           font-size: 21px;
           margin-right: 3px; }
+  #wrap #footer {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    color: #D3D5D7;
+    padding: 10px 0; }
+    #wrap #footer img {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px; }
   #wrap .tb_rating_ico__.tb__icon.tb-google-rating {
     color: #79FFF7 !important; }
 
